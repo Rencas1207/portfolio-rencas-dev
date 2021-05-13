@@ -1,0 +1,281 @@
+.webp .hero {
+  background: url(../../../build/img/hero-image-4.webp) center center no-repeat
+    fixed;
+  background-size: cover;
+}
+
+.no-webp .hero {
+  background: url(../../../build/img/hero-image-4.jpg) center center no-repeat
+    fixed;
+  background-size: cover;
+}
+.hero {
+  //   border: 2px solid white;
+  // background: url(../../../build/img/hero-image-4.jpg) center center no-repeat
+  //   fixed;
+  // background-size: cover;
+  width: 100%;
+  height: 100vh;
+  .hero-text {
+    //  border: 2px solid blue;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    @include desktop {
+      text-align: left;
+    }
+  }
+}
+
+.hero-part-1 {
+  // border: 2px solid yellow;
+  margin-top: 7rem;
+  width: 100%;
+  height: auto;
+  h1 {
+    margin: 1.5rem 0 0 0;
+    color: $blanco;
+    text-shadow: -5px -5px 5px $negro, 5px -5px 5px $negro, -5px 5px 5px $negro,
+      5px 5px 5px $negro;
+    letter-spacing: 3px;
+    @include telefonoSmall {
+      font-size: 5rem;
+    }
+    @include telefono {
+      font-size: 6.5rem;
+    }
+    @include tablet {
+      font-size: 7.5rem;
+    }
+    @include desktop {
+      font-size: 8.5rem;
+      letter-spacing: 5px;
+    }
+    .text-title-2 {
+      span {
+        color: $negro;
+      }
+    }
+  }
+  h2 {
+    color: $lead-number;
+    font-style: italic;
+    font-size: 3rem;
+    margin: 1.5rem 0;
+    letter-spacing: 1px;
+    text-shadow: -5px -5px 5px $negro, 5px -5px 5px $negro, -5px 5px 5px $negro,
+      5px 5px 5px $negro;
+    // margin: 2rem 0;
+    // margin: 0;
+    // margin: 2rem 0 0 0;
+    font-family: $fuente_secundaria;
+    position: relative;
+    opacity: 0;
+    bottom: -30px;
+    animation: slideSubtitle 1s ease-out forwards 3s;
+    // margin: 2rem 0;
+
+    @include telefonoSmall {
+      font-size: 3rem;
+    }
+    @include telefono {
+      font-size: 3.5rem;
+      // margin: 1.5rem 0;
+    }
+    @include tablet {
+      font-size: 4rem;
+      // margin: 2rem 0 0 0;
+      margin: 1.5rem 0;
+    }
+    @include desktop {
+      font-size: 5rem;
+      margin: 2rem 0;
+    }
+  }
+}
+
+@keyframes slideSubtitle {
+  100% {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+
+.hero-part-2 {
+  // border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  @include desktop {
+    flex-direction: row;
+    margin-top: 2.5rem;
+  }
+}
+
+.hero-button {
+  // border: 1px solid white;
+  width: 100%;
+  .text-button {
+    border: none;
+    border-radius: 2rem;
+    color: $negro;
+    background-color: $main-color;
+    font-size: 2rem;
+    padding: 1.1rem 2.8rem;
+    position: relative;
+    animation: slideContactButton 1s ease-in-out forwards 3s;
+    //  animation-delay: 3s;
+    right: -100px;
+    opacity: 0;
+    cursor: pointer;
+    &:hover {
+      color: $fuxia-color;
+    }
+    @include tablet {
+      font-size: 2.5rem;
+    }
+    @include desktop {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+@keyframes slideContactButton {
+  100% {
+    right: 0px;
+    opacity: 1;
+  }
+}
+
+.hero-red-social {
+  // border: 1px solid white;
+  display: flex;
+  margin-top: 2rem;
+  @include desktop {
+    margin-top: 0;
+  }
+}
+
+.red-social {
+  //   border: 3px solid green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  //   height: auto;
+  overflow: hidden;
+
+  @include desktop {
+    justify-content: space-evenly;
+  }
+}
+
+@keyframes slideButton {
+  100% {
+    right: 0px;
+  }
+}
+
+.button {
+  color: $negro;
+  // color: $blanco;
+  background: $main-color;
+  // background: #0d081a;
+  width: 4rem;
+  height: 4rem;
+  // font-size: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3.5px solid $negro;
+  border-radius: 12px;
+  margin-right: 0.5rem;
+  position: relative;
+  animation: slideButton 4.5s ease-in-out forwards;
+  right: -1000px;
+
+  &:last-child {
+    margin: 0;
+    @include desktop {
+      margin-right: 1.5rem;
+      margin-right: 1rem;
+    }
+  }
+
+  @include telefono {
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-right: 1.5rem;
+  }
+  @include tablet {
+    width: 5rem;
+    height: 5rem;
+    margin-right: 2rem;
+  }
+  @include desktop {
+    width: 5rem;
+    height: 5rem;
+    margin-right: 1.5rem;
+  }
+  .icon-social-media {
+    i {
+      font-size: 19px;
+      font-weight: bold;
+      @include telefono {
+        font-size: 22px;
+      }
+      @include tablet {
+        font-size: 25px;
+      }
+      @include desktop {
+        font-size: 28px;
+      }
+    }
+    .fab.fa-instagram {
+      font-size: 26px;
+      @include telefono {
+        font-size: 30px;
+      }
+      @include tablet {
+        font-size: 34px;
+      }
+      @include desktop {
+        font-size: 34px;
+      }
+    }
+  }
+}
+
+.line {
+  // display: flex;
+  margin-top: 1.4rem;
+  display: none;
+  hr {
+    border-radius: 8px;
+    animation: slideLine 1.5s forwards 3s;
+  }
+  @include desktop {
+    display: block;
+  }
+}
+
+@keyframes slideLine {
+  0% {
+    width: 0px;
+    border: 3px solid $main-color;
+    // border: 5px solid $blanco;1
+  }
+
+  100% {
+    border: 3px solid $main-color;
+    // border: 5px solid $blanco;
+    width: 150px;
+  }
+}

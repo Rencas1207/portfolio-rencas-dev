@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link rel="preload" href="build/css/app.css" as="style">
+   <link rel="stylesheet" href="build/css/app.css">
+
+   <title>Portfolio | Rencas Dev - Frontend Developer</title>
+   <meta name="description"
+      content="Hola, Soy Renzo, Web Developer, bienvenido a mi portafolio web donde sabrás un poco de mí y mis proyectos como Frontend Developer">
+
+   <link rel="canonical" href="https://rencas1207.github.io/portfolio-rencas-2021">
+   <link rel="icon" href="https://rencas1207.github.io/portfolio-rencas-2021/src/img/favicon.png">
+   <link rel="apple-touch-icon" href="https://rencas1207.github.io/portfolio-rencas-2021/src/img/favicon.png">
+
+   <meta name="theme-color" content="#FFC000">
+
+   <meta name="twitter:card" content="summary">
+   <meta property="og:type" content="website">
+   <meta property="og:title" name="twitter:title" content="Portfolio | Rencas Dev - Frontend Developer">
+   <meta property="og:image" name="twitter:image"
+      content="https://rencas1207.github.io/portfolio-rencas-2021/src/img/hero-image.webp">
+   <meta property="og:url" name="twitter:url" content="https://rencas1207.github.io/portfolio-rencas-2021/">
+   <meta property="og:description" name="twitter:description" content="Hola, Soy Renzo, Web Developer, bienvenido a mi portafolio web donde sabrás un poco de mí y mis proyectos
+      como Frontend Developer">
+
+   <!-- OJO -->
+   <link rel="preload" href="build/img/hero-image-4.jpg">
+
+   <script src="https://kit.fontawesome.com/5e175b02ac.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+   <header>
+      <div class="header-container contenedor">
+         <a class="logo" href="index.html">
+            <img loading="lazy" src="build/img/logo-dark.png" alt="Logo de Rencas Dev">
+         </a>
+         <button class="hamburger">
+            <div class="bar"></div>
+         </button>
+         <nav class="navegacion-principal">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+         </nav>
+      </div>
+   </header>
+
+   <section class="hero" id="home">
+      <!-- <div class="hero-image">
+         <img src="build/img/hero-image-4.jpg" alt="">
+      </div> -->
+      <div class="hero-text contenedor">
+         <div class="hero-part-1">
+            <h1 class="text-title-1">Hello,</h1>
+            <h1 class="text-title-2">I'am Renzo,</h1>
+            <h1 class="text-title-3">Web Developer</h1>
+            <h2 class="text-subtitle">Frontend Developer</h2>
+            <div class="hero-part-2">
+               <a href="#contact" class="hero-button">
+                  <button class="text-button">
+                     CONTACT ME
+                  </button>
+               </a>
+               <div class="hero-red-social">
+                  <div class="red-social">
+                     <a href="https://www.facebook.com/ren.casdagnino.17" class="button" target="_blank">
+                        <div class="icon-social-media">
+                           <i class="fab fa-facebook-f"></i>
+                        </div>
+                     </a>
+                     <a href="https://twitter.com/rencas1207" class="button" target="_blank">
+                        <div class="icon-social-media">
+                           <i class="fab fa-twitter"></i>
+                        </div>
+                     </a>
+                     <a href="https://www.instagram.com/renzo.casdagnino/" class="button" target="_blank">
+                        <div class="icon-social-media">
+                           <i class="fab fa-instagram"></i>
+                        </div>
+                     </a>
+                     <a href="https://www.linkedin.com/in/rencas-968198632/" class="button" target="_blank">
+                        <div class="icon-social-media">
+                           <i class="fab fa-linkedin-in"></i>
+                        </div>
+                     </a>
+                     <a href="https://github.com/Rencas1207" class="button" target="_blank">
+                        <div class="icon-social-media">
+                           <i class="fab fa-github"></i>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="line">
+                     <hr>
+                  </div>
+               </div>
+            </div>
+         </div>
+   </section>
+
+   <section class="about full-lg-screen show" id="about">
+      <div class="contenedor">
+         <div class="about-title-number">
+            <article class="about-title animate-left">
+               <div class="title">
+                  <h2>About</h2>
+               </div>
+            </article>
+            <article class="about-number animate-right">
+               <span>01.</span>
+            </article>
+         </div>
+         <div class="about-main">
+            <article class="about-text">
+               <p class="about-title-description animate-top">
+                  <b>RENZO ISRAEL CASTILLA DAGNINO</b>
+                  <br>
+                  Frontend Developer, in love with technology and web development
+               </p>
+               <p class="about-iam animate-top">
+                  <b>📌 Who I am?</b>
+               </p>
+               <p class="about-description animate-top">
+                  Peruvian 🇵🇪, originally from Ica - Chincha, currently
+                  I've been working as a freenlacer 💻. I love it and
+                  I enjoy doing the layout and
+                  interactivity of web interfaces 😍, as well as animations
+                  and creation of intuitive user experiences and
+                  dynamics ✨.
+               </p>
+            </article>
+            <article class="about-img animate-top">
+               <picture>
+                  <source srcset="build/img/photo-rencas.webp" type="image/webp">
+                  <img loading="lazy" class="about-img-photo" src="build/img/photo-rencas.jpg"
+                     alt="Image of Renzo Castilla">
+               </picture>
+
+               <a href="https://drive.google.com/file/d/1WAlDbjRcIGWuMcf6W2gjKrOfVLCe4B_u/view?usp=sharing"
+                  target="_blank">
+                  <button class="about-button">
+                     Download cv
+                  </button>
+               </a>
+            </article>
+         </div>
+      </div>
+   </section>
+
+   <section class="skills full-lg-screen show" id="skills">
+      <div class="contenedor">
+         <div class="skills-title-number">
+            <article class="skills-title animate-left">
+               <div class="title">
+                  <h2>Skills</h2>
+               </div>
+            </article>
+            <article class="skills-number animate-right">
+               <span>02.</span>
+            </article>
+         </div>
+         <div class="skills-main animate-top">
+            <div class="skills-icons animate-top">
+               <article class="skill-icon">
+                  <img loading="lazy" src="./src/img/icon-html5.svg" alt="">
+                  <p>HTML</p>
+               </article>
+               <article class="skill-icon">
+                  <img loading="lazy" src="./src/img/icon-css3.svg" alt="">
+                  <p>CSS</p>
+               </article>
+               <article class="skill-icon">
+                  <img loading="lazy" src="./src/img/icon-sass.svg" alt="">
+                  <p>SASS</p>
+               </article>
+               <article class="skill-icon">
+                  <img loading="lazy" src="./src/img/icon-bootstrap.svg" alt="">
+                  <p>BOOTSTRAP</p>
+               </article>
+               <article class="skill-icon">
+                  <img loading="lazy" src="./src/img/icon-figma.svg" alt="">
+                  <p>FIGMA</p>
+               </article>
+               <article class="skill-icon">
+                  <img loading="lazy" src="./src/img/icon-javascript.svg" alt="">
+                  <p>JAVASCRIPT</p>
+               </article>
+               <article class="skill-icon">
+                  <img loading="lazy" src="./src/img/icon-gulp.svg" alt="">
+                  <p>GULP</p>
+               </article>
+               <article class="skill-icon">
+                  <img loading="lazy" src="./src/img/icon-npm.svg" alt="">
+                  <p>NPM</p>
+               </article>
+               <article class="skill-icon">
+                  <img loading="lazy" src="./src/img/icon-git.svg" alt="">
+                  <p>GIT</p>
+               </article>
+               <article class="skill-icon">
+                  <img loading="lazy" src="./src/img/icon-github.svg" alt="">
+                  <p>GITHUB</p>
+               </article>
+            </div>
+            <div class="skills-image animate-top">
+               <p>
+                  Creo sitios web receptivos exitosos que son rápidos, fáciles de usar
+                  y construidos con las mejores prácticas...
+               </p>
+               <img loading="lazy" src="./build/img/skills.svg" alt="Imagen de la sección de Skills">
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="services full-lg-screen show" id="services">
+      <div class="contenedor">
+         <div class="services-title-number">
+            <article class="services-title animate-left">
+               <div class="title">
+                  <h2>Services</h2>
+               </div>
+            </article>
+            <article class="services-number animate-right">
+               <span>03.</span>
+            </article>
+         </div>
+         <div class="services-main">
+            <!-- <article class="services-description"> -->
+            <p class="services-description animate-top">
+               Estos son algunos servicios que te puedo ofrecer para que puedas construir tu página, blog o sitio
+               web...
+            </p>
+            <!-- </article> -->
+            <div class="services-content animate-top">
+               <article class="service-card">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                     <path
+                        d="M20,3H4C2.897,3,2,3.897,2,5v14c0,1.103,0.897,2,2,2h16c1.103,0,2-0.897,2-2V5C22,3.897,21.103,3,20,3z M4,19V7h16 l0.002,12H4z" />
+                     <path
+                        d="M9.293 9.293L5.586 13 9.293 16.707 10.707 15.293 8.414 13 10.707 10.707zM14.707 9.293L13.293 10.707 15.586 13 13.293 15.293 14.707 16.707 18.414 13z" />
+                  </svg>
+                  <h3 class="service-title">DEVELOPMENT</h3>
+                  <p class="service-description">
+                     Development, I will develop your page, from start to end, from semantic code to the
+                     programming and interactivity manipulated by your final user.
+                  </p>
+               </article>
+               <article class="service-card ">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                     <path
+                        d="M19 3H5C3.897 3 3 3.897 3 5v4h10 2 6V5C21 3.897 20.103 3 19 3zM3 19c0 1.103.897 2 2 2h8V11H3V19zM15 21h4c1.103 0 2-.897 2-2v-8h-6V21z" />
+                  </svg>
+                  <h3 class="service-title">DESIGN CREATIVE</h3>
+                  <p class="service-description">
+                     Creative Design, in the end you will have a unique layout and an attractive prototype, and
+                     above all effective to attract the attention of your audience.
+                  </p>
+               </article>
+               <article class="service-card ">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                     <path
+                        d="M20,3H7C5.897,3,5,3.897,5,5v2H4C2.897,7,2,7.897,2,9v10c0,1.103,0.897,2,2,2h6c1.103,0,2-0.897,2-2h8c1.103,0,2-0.897,2-2 V5C22,3.897,21.103,3,20,3z M6,9h4l-0.003,9H4V9H6z M12,17V9c0-1.103-0.897-2-2-2H7V5h11v12H12z" />
+                  </svg>
+                  <h3 class="service-title">WEB RESPONSIVE</h3>
+                  <p class="service-description">
+                     Web Responsive, your site will have accessibility and will adapt to any type of device, from
+                     desktop computers or laptops to tablets, smartphones and mobiles.
+                  </p>
+               </article>
+               <article class="service-card">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                     <path
+                        d="M18.277,8C18.624,8.596,19.262,9,20,9c1.104,0,2-0.896,2-2s-0.896-2-2-2c-0.738,0-1.376,0.404-1.723,1H16V4 c0-0.553-0.447-1-1-1H9C8.447,3,8,3.447,8,4v2H5.723C5.376,5.404,4.738,5,4,5C2.896,5,2,5.896,2,7s0.896,2,2,2 c0.738,0,1.376-0.404,1.723-1H8v0.368C5.134,9.839,4.319,12.534,4.092,14H3c-0.553,0-1,0.447-1,1v4c0,0.553,0.447,1,1,1h4 c0.553,0,1-0.447,1-1v-4c0-0.553-0.447-1-1-1H6.123c0.197-0.959,0.718-2.406,2.085-3.418C8.391,10.829,8.669,11,9,11h6 c0.331,0,0.61-0.171,0.792-0.419c1.373,1.013,1.895,2.458,2.089,3.419H17c-0.553,0-1,0.447-1,1v4c0,0.553,0.447,1,1,1h4 c0.553,0,1-0.447,1-1v-4c0-0.553-0.447-1-1-1h-1.092C19.681,12.534,18.866,9.839,16,8.368V8H18.277z M14,9h-4V8V6V5h4V9z" />
+                  </svg>
+                  <h3 class="service-title">UI/UX</h3>
+                  <p class="service-description">
+                     Interface and User Experience, I will design the interaction and usability of the prototype
+                     as the first instance, applying the Atomic Design methodology.
+                  </p>
+               </article>
+               <article class="service-card">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                     <path d="M2 11H7V13H2zM17 11H22V13H17zM11 17H13V22H11zM11 2H13V7H11z" />
+                     <path transform="rotate(-45.001 6.697 6.697)" d="M5.697 4.197H7.697V9.197H5.697z" />
+                     <path transform="rotate(134.999 17.303 17.303)" d="M16.303 14.803H18.303V19.803H16.303z" />
+                     <path transform="rotate(45.001 6.697 17.303)" d="M5.697 14.803H7.697V19.803H5.697z" />
+                     <path transform="rotate(-44.992 17.303 6.697)" d="M14.803 5.697H19.803V7.697H14.803z" />
+                  </svg>
+                  <h3 class="service-title">WPO</h3>
+                  <p class="service-description">
+                     Web Performance Optimization, I will make your website improve its load and response time,
+                     diagnosing with some of the best Google tools, as is Lighthouse.
+                  </p>
+               </article>
+               <article class="service-card">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                     <path
+                        d="M10,18c1.846,0,3.543-0.635,4.897-1.688l4.396,4.396l1.414-1.414l-4.396-4.396C17.365,13.543,18,11.846,18,10 c0-4.411-3.589-8-8-8s-8,3.589-8,8S5.589,18,10,18z M10,4c3.309,0,6,2.691,6,6s-2.691,6-6,6s-6-2.691-6-6S6.691,4,10,4z" />
+                     <path
+                        d="M11.412,8.586C11.791,8.966,12,9.468,12,10h2c0-1.065-0.416-2.069-1.174-2.828c-1.514-1.512-4.139-1.512-5.652,0 l1.412,1.416C9.346,7.83,10.656,7.832,11.412,8.586z" />
+                  </svg>
+                  <h3 class="service-title">SEO</h3>
+                  <p class="service-description">
+                     Search Engine Optimization, I will optimize your site reaching a good positioning in the
+                     different search engines, connecting with your customers quickly.
+                  </p>
+               </article>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="projects full-lg-screen show" id="projects">
+      <div class="contenedor">
+         <div class="projects-title-number">
+            <article class="projects-title animate-left">
+               <div class="title">
+                  <h2>Projects</h2>
+               </div>
+            </article>
+            <article class="projects-number animate-right">
+               <span>04.</span>
+            </article>
+         </div>
+         <div class="projects-main">
+            <p class="projects-description animate-top">
+               A continuación, te muestro una pequeña galería de proyectos recientes, es solo una hoja del
+               árbol en comparación con toda la lista, entre ellos están mis proyectos propios y retos en
+               Frontend Mentor.
+            </p>
+            <div class="contenedor-projects animate-top">
+               <div class="project-card">
+                  <div class="project-card-content">
+                     <div class="card-image">
+                        <picture>
+                           <source loading="lazy" srcset="build/img/project/project-1.webp" type="image/webp">
+                           <img loading="lazy" src="build/img/project/project-1.png" alt="Imagen de proyecto 1">
+                        </picture>
+                     </div>
+                     <h3>FESTIVAL MUSIC ROCK 2021</h3>
+                     <div class="project-hover">
+                        <p class="ph-description">Proyecto realizado con NPM, Gulp, Html, Sass,
+                           Javacript y deploy en Github Pages</p>
+                        <div class="ph-btn">
+                           <a class="ph-btn-view" href="https://projectblogcafe.netlify.app" target="_blank">
+                              View Project <i class="fas fa-external-link-alt"></i>
+                           </a>
+                           <a class="ph-btn-details" href="#project-1">
+                              Details <i class="fas fa-info-circle"></i>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="project-card">
+                  <div class="project-card-content">
+                     <div class="card-image">
+                        <picture>
+                           <source loading="lazy" srcset="build/img/project/project-2.webp" type="image/webp">
+                           <img loading="lazy" src="build/img/project/project-2.png" alt="Imagen de proyecto 2">
+                        </picture>
+                        <!-- <img loading="lazy" src="src/img/project/project-2.png" alt="Imagen de proyecto 2"> -->
+                     </div>
+                     <h3>BLOG DE CAFE</h3>
+                     <div class="project-hover">
+                        <p class="ph-description">Proyecto realizado con NPM, Gulp, Html, Sass,
+                           Javacript y deploy en Github Pages</p>
+                        <div class="ph-btn">
+                           <a class="ph-btn-view" href="https://projectblogcafe.netlify.app" target="_blank">
+                              View Project <i class="fas fa-external-link-alt"></i>
+                           </a>
+                           <a class="ph-btn-details" href="#project-2">
+                              Details <i class="fas fa-info-circle"></i>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="project-card">
+                  <div class="project-card-content">
+                     <div class="card-image">
+                        <picture>
+                           <source loading="lazy" srcset="build/img/project/project-3.webp" type="image/webp">
+                           <img loading="lazy" src="build/img/project/project-3.png" alt="Imagen de proyecto 3">
+                        </picture>
+                        <!-- <img loading="lazy" src="src/img/project/project-3.png" alt="Imagen de proyecto 3"> -->
+                     </div>
+                     <h3>LANDING PAGE FREENLACER</h3>
+                     <div class="project-hover">
+                        <p class="ph-description">Proyecto realizado con NPM, Gulp, Html, Sass,
+                           Javacript y deploy en Github Pages</p>
+                        <div class="ph-btn">
+                           <a class="ph-btn-view" href="https://projectblogcafe.netlify.app" target="_blank">
+                              View Project <i class="fas fa-external-link-alt"></i>
+                           </a>
+                           <a class="ph-btn-details" href="#project-3">
+                              Details <i class="fas fa-info-circle"></i>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="project-card">
+                  <div class="project-card-content">
+                     <div class="card-image">
+                        <picture>
+                           <source loading="lazy" srcset="build/img/project/project-4.webp" type="image/webp">
+                           <img loading="lazy" src="build/img/project/project-4.png" alt="Imagen de proyecto 4">
+                        </picture>
+                        <!-- <img loading="lazy" src="src/img/project/project-4.png" alt="Imagen de proyecto 4"> -->
+                     </div>
+                     <h3>TIENDA FRONTEND STORE</h3>
+                     <div class="project-hover">
+                        <p class="ph-description">Proyecto realizado con NPM, Gulp, Html, Sass,
+                           Javacript y deploy en Github Pages</p>
+                        <div class="ph-btn">
+                           <a class="ph-btn-view" href="https://projectblogcafe.netlify.app" target="_blank">
+                              View Project <i class="fas fa-external-link-alt"></i>
+                           </a>
+                           <a class="ph-btn-details" href="#project-4">
+                              Details <i class="fas fa-info-circle"></i>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="project-card">
+                  <div class="project-card-content">
+                     <div class="card-image">
+                        <picture>
+                           <source loading="lazy" srcset="build/img/project/project-5.webp" type="image/webp">
+                           <img loading="lazy" src="build/img/project/project-5.png" alt="Imagen de proyecto 5">
+                        </picture>
+                        <!-- <img loading="lazy" src="src/img/project/project-5.png" alt="Imagen de proyecto 5"> -->
+                     </div>
+                     <h3>CURSOS DESARROLLO WEB</h3>
+                     <div class="project-hover">
+                        <p class="ph-description">Proyecto realizado con NPM, Gulp, Html, Sass,
+                           Javacript y deploy en Github Pages</p>
+                        <div class="ph-btn">
+                           <a class="ph-btn-view" href="https://projectblogcafe.netlify.app" target="_blank">
+                              View Project <i class="fas fa-external-link-alt"></i>
+                           </a>
+                           <a class="ph-btn-details" href="#project-5">
+                              Details <i class="fas fa-info-circle"></i>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="project-card">
+                  <div class="project-card-content">
+                     <div class="card-image">
+                        <picture>
+                           <source loading="lazy" srcset="build/img/project/project-1.webp" type="image/webp">
+                           <img loading="lazy" src="build/img/project/project-1.png" alt="Imagen de proyecto 6">
+                        </picture>
+                        <!-- <img loading="lazy" src="http://placeimg.com/640/480/tech" alt="Imagen de proyecto 6"> -->
+                     </div>
+                     <h3>Restaurant "El Cordón y la Rosa"</h3>
+                     <div class="project-hover">
+                        <p class="ph-description">Proyecto realizado con NPM, Gulp, Html, Sass,
+                           Javacript y deploy en Github Pages</p>
+                        <div class="ph-btn">
+                           <a class="ph-btn-view" href="https://projectblogcafe.netlify.app" target="_blank">
+                              View Project <i class="fas fa-external-link-alt"></i>
+                           </a>
+                           <a class="ph-btn-details" href="#project-5">
+                              Details <i class="fas fa-info-circle"></i>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <article class="modal" id="project-1">
+      <div class="modal-content">
+         <a href="#close" class="modal-close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+               <path
+                  d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z" />
+            </svg>
+         </a>
+         <article class="portfolio-modal">
+            <img loading="lazy" src="./build/img/project/project-1.png" alt="Proyecto 1">
+            <div class="portfolio-info">
+               <h3>FESTIVAL MUSICA ROCK 2021</h3>
+               <p>
+                  Sitio Web construido con las mejores prácticas, utilizando NPM, Html, Css,
+                  y Javacript....
+               </p>
+               <table class="table">
+                  <tbody>
+                     <tr>
+                        <td class="encabezado"><strong>CLIENTE:</strong></td>
+                        <td>Anónimo xd</td>
+                     </tr>
+                     <tr>
+                        <td class="encabezado"><strong>FECHA:</strong></td>
+                        <td>25/12/2021</td>
+                     </tr>
+                     <tr>
+                        <td class="encabezado"><strong>TIPO:</strong></td>
+                        <td>Landing Page</td>
+                     </tr>
+                     <tr>
+                        <td class="encabezado"><strong>ENLACE:</strong></td>
+                        <td>
+                           <a href="https://festival-musicweb.netlify.app/" target="_blank" rel="noopener noreferrer">
+                              https://festival-musicweb...
+                           </a>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </article>
+      </div>
+   </article>
+
+   <article class="modal" id="project-2">
+      <div class="modal-content">
+         <a href="#close" class="modal-close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+               <path
+                  d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z" />
+            </svg>
+         </a>
+         <article class="portfolio-modal">
+            <img loading="lazy" src="./build/img/project/project-2.png" alt="Proyecto 2">
+            <div class="portfolio-info">
+               <h3>BLOG DE CAFE</h3>
+               <p>
+                  Sitio Web construido con las mejores prácticas, utilizando NPM, Html, Css,
+                  y Javacript....
+               </p>
+               <table class="table">
+                  <tbody>
+                     <tr>
+                        <td class="encabezado"><strong>CLIENTE:</strong></td>
+                        <td>Anónimo xd</td>
+                     </tr>
+                     <tr>
+                        <td class="encabezado"><strong>FECHA:</strong></td>
+                        <td>25/12/2021</td>
+                     </tr>
+                     <tr>
+                        <td class="encabezado"><strong>TIPO:</strong></td>
+                        <td>Landing Page</td>
+                     </tr>
+                     <tr>
+                        <td class="encabezado"><strong>ENLACE:</strong></td>
+                        <td>
+                           <a href="https://projectblogcafe.netlify.app/" target="_blank" rel="noopener noreferrer">
+                              https://projectblogcafe...
+                           </a>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </article>
+      </div>
+   </article>
+
+   <article class="modal" id="project-3">
+      <div class="modal-content">
+         <a href="#close" class="modal-close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+               <path
+                  d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z" />
+            </svg>
+         </a>
+         <article class="portfolio-modal">
+            <img loading="lazy" src="src/img/project/project-3.png" alt="Proyecto 3">
+            <div class="portfolio-info">
+               <h3>LANDING PAGE FREENLACER</h3>
+               <p>
+                  Sitio Web construido con las mejores prácticas, utilizando NPM, Html, Css,
+                  y Javacript....
+               </p>
+               <table class="table">
+                  <tbody>
+                     <tr>
+                        <td class="encabezado"><strong>CLIENTE:</strong></td>
+                        <td>Anónimo xd</td>
+                     </tr>
+                     <tr>
+                        <td class="encabezado"><strong>FECHA:</strong></td>
+                        <td>25/12/2021</td>
+                     </tr>
+                     <tr>
+                        <td class="encabezado"><strong>TIPO:</strong></td>
+                        <td>Landing Page</td>
+                     </tr>
+                     <tr>
+                        <td class="encabezado"><strong>ENLACE:</strong></td>
+                        <td>
+                           <a href="https://firstprojectweb1.netlify.app/" target="_blank" rel="noopener noreferrer">
+                              https://firstprojectweb1...
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </article>
+      </div>
+   </article>
+
+   <article class="modal" id="project-4">
+      <div class="modal-content">
+         <a href="#close" class="modal-close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+               <path
+                  d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z" />
+            </svg>
+         </a>
+         <article class="portfolio-modal">
+            <img loading="lazy" src="src/img/project/project-4.png" alt="Proyecto 4">
+            <div class="portfolio-info">
+               <h3>TIENDA FRONTEND STORE</h3>
+               <p>
+                  Sitio Web construido con las mejores prácticas, utilizando NPM, Html, Css,
+                  y Javacript....
+               </p>
+               <table class="table">
+                  <tbody>
+                     <tr>
+                        <td class="encabezado"><strong>CLIENTE:</strong></td>
+                        <td>Anónimo xd</td>
+                     </tr>
+                     <tr>
+                        <td class="encabezado"><strong>FECHA:</strong></td>
+                        <td>25/12/2021</td>
+                     </tr>
+                     <tr>
+                        <td class="encabezado"><strong>TIPO:</strong></td>
+                        <td>Landing Page</td>
+                     </tr>
+                     <tr>
+                        <td class="encabezado"><strong>ENLACE:</strong></td>
+                        <td>
+                           <a href="https://rencas1207.github.io/Front-End-Store/" target="_blank"
+                              rel="noopener noreferrer">
+                              https://rencas1207.github...
+                           </a>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </article>
+      </div>
+   </article>
+
+   <article class="modal" id="project-5">
+      <div class="modal-content">
+         <a href="#close" class="modal-close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+               <path
+                  d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z" />
+            </svg>
+         </a>
+         <article class="portfolio-modal">
+            <img loading="lazy" src="src/img/project/project-5.png" alt="Proyecto 5">
+            <div class="portfolio-info">
+               <h3>CURSOS DESARROLLO WEB</h3>
+               <p>
+                  Sitio Web construido con las mejores prácticas, utilizando NPM, Html, Css,
+                  y Javacript....
+               </p>
+               <table class="table">
+                  <tbody>
+                     <tr>
+                        <td class="encabezado"><strong>CLIENTE:</strong></td>
+                        <td>Anónimo xd</td>
+                     </tr>
+                     <tr>
+                        <td class="encabezado"><strong>FECHA:</strong></td>
+                        <td>25/12/2021</td>
+                     </tr>
+                     <tr>
+                        <td class="encabezado"><strong>TIPO:</strong></td>
+                        <td>Landing Page</td>
+                     </tr>
+                     <tr>
+                        <td class="encabezado"><strong>ENLACE:</strong></td>
+                        <td>
+                           <a href="https://rencas1207.github.io/MaquetacionWeb2/" target="_blank"
+                              rel="noopener noreferrer">
+                              https://rencas1207.github...
+                           </a>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </article>
+      </div>
+   </article>
+
+   <article class="modal" id="project-6">
+      <div class="modal-content">
+         <a href="#close" class="modal-close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+               <path
+                  d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z" />
+            </svg>
+         </a>
+         <article class="portfolio-modal">
+            <img loading="lazy" src="http://placeimg.com/640/480/tech" alt="Proyecto 6">
+            <div class="portfolio-info">
+               <h3>FESTIVAL MUSICA ROCK 2021</h3>
+               <p>
+                  Sitio Web construido con las mejores prácticas, utilizando NPM, Html, Css,
+                  y Javacript....
+               </p>
+               <table class="table">
+                  <tbody>
+                     <tr>
+                        <td class="encabezado"><strong>CLIENTE:</strong></td>
+                        <td>Anónimo xd</td>
+                     </tr>
+                     <tr>
+                        <td class="encabezado"><strong>FECHA:</strong></td>
+                        <td>25/12/2021</td>
+                     </tr>
+                     <tr>
+                        <td class="encabezado"><strong>TIPO:</strong></td>
+                        <td>Landing Page</td>
+                     </tr>
+                     <tr>
+                        <td class="encabezado"><strong>ENLACE:</strong></td>
+                        <td>
+                           <a href="https://festival-musicweb.netlify.app/" target="_blank" rel="noopener noreferrer">
+                              https://festival-musicweb...
+                           </a>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </article>
+      </div>
+   </article>
+
+
+   <section class="contact full-lg-screen show" id="contact">
+      <div class="contenedor">
+         <div class="contact-title-number">
+            <article class="contact-title animate-left">
+               <div class="title">
+                  <h2>Contact</h2>
+               </div>
+            </article>
+            <article class="contact-number animate-right">
+               <span>05.</span>
+            </article>
+         </div>
+         <p class="contact-description animate-top">
+            Estoy abierto para cualquier modalidad de trabajo (oficina o freenlace), especialmente en los
+            proyectos grandes que me hagan ganar experiencia. No obstante, si tiene otra solicitud o pregunta,
+            no dude en utilizar el formulario.
+         </p>
+         <div class="contenido-contact">
+            <div class="contact-formulario animate-top">
+               <form class="formulario">
+                  <div class="input-data">
+                     <input type="text" name="name" title="Nombre sólo acepta letras y espacios en blanco"
+                        pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                     <div class="underline"></div>
+                     <label for="Nombre">Name</label>
+                  </div>
+                  <div class="input-data">
+                     <input type="email" name="email" title="Email inválido"
+                        pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
+                     <div class="underline"></div>
+                     <label for="Email">Email</label>
+                  </div>
+
+                  <div class="input-data-textarea">
+                     <textarea name="comments" cols="70" rows="5" required></textarea>
+                     <div class="underline"></div>
+                     <label for="Mensaje">Message</label>
+                  </div>
+
+                  <div class="contact-form-loader none text-center">
+                     <img src="src/img/loader.svg" alt="Enviando...">
+                  </div>
+
+                  <input class="button-submit" type="submit" value="Send   Message!">
+               </form>
+               <article id="gracias" class="modal">
+                  <div class="modal-content">
+                     <article class="contact-form-responsive">
+                        <h3>¡Muchas Gracias! <br> Por tus comentarios </h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                           <path d="M12,18c4,0,5-4,5-4H7C7,14,8,18,12,18z" />
+                           <path
+                              d="M12,2C6.486,2,2,6.486,2,12c0,5.514,4.486,10,10,10s10-4.486,10-10C22,6.486,17.514,2,12,2z M12,20c-4.411,0-8-3.589-8-8 s3.589-8,8-8s8,3.589,8,8S16.411,20,12,20z" />
+                           <path
+                              d="M13 12l2 .012C15.012 11.55 15.194 11 16 11s.988.55 1 1h2c0-1.206-.799-3-3-3S13 10.794 13 12zM8 11c.806 0 .988.55 1 1h2c0-1.206-.799-3-3-3s-3 1.794-3 3l2 .012C7.012 11.55 7.194 11 8 11z" />
+                        </svg>
+                     </article>
+                  </div>
+               </article>
+            </div>
+            <div class="contact-image animate-top">
+               <img loading="lazy" src="src/img/contact.svg" alt="image of Contact">
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <footer class="footer show">
+      <div class="contenedor">
+         <div class="red-social-media-footer">
+            <a href="https://www.facebook.com/ren.casdagnino.17" class="button-footer" target="_blank">
+               <div class="icon-social-media">
+                  <i class="fab fa-facebook-f"></i>
+               </div>
+
+            </a>
+            <a href="https://twitter.com/rencas1207" class="button-footer" target="_blank">
+               <div class="icon-social-media">
+                  <i class="fab fa-twitter"></i>
+               </div>
+
+            </a>
+            <a href="https://www.instagram.com/renzo.casdagnino/" class="button-footer" target="_blank">
+               <div class="icon-social-media">
+                  <i class="fab fa-instagram"></i>
+               </div>
+
+            </a>
+            <a href="https://www.linkedin.com/in/rencas-968198632/" class="button-footer" target="_blank">
+               <div class="icon-social-media">
+                  <i class="fab fa-linkedin-in"></i>
+               </div>
+
+            </a>
+            <a href="https://github.com/Rencas1207" class="button-footer" target="_blank">
+               <div class="icon-social-media">
+                  <i class="fab fa-github"></i>
+               </div>
+            </a>
+         </div>
+         <p class="footer-copyright">Made width ❤️ by Rencas Dev | Ica, Perú <br> Copyright© 2021 - All
+            rights reserved</p>
+      </div>
+   </footer>
+
+   <a href="#" class="scroll-top-btn hidden">
+      <div class="button-up">
+         <i class="fas fa-chevron-up"></i>
+      </div>
+   </a>
+   <script src="build/js/bundle.js" type="module"></script>
+   <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+.footer {
+  // background-color: $text-color;
+  background: #0c1633;
+  height: auto;
+  padding: 1.5rem 0rem;
+  box-shadow: 0 0 0.2rem 0.2rem #444;
+}
+
+.red-social-media-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-footer {
+  border: 3.5px solid $negro;
+  border-radius: 12px;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $main-color;
+  color: $negro;
+  cursor: pointer;
+  outline: 0;
+  margin-right: 0.5rem;
+
+  &:last-child {
+    margin: 0;
+  }
+
+  @include telefono {
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-right: 1.5rem;
+  }
+  @include tablet {
+    width: 5rem;
+    height: 5rem;
+    margin-right: 2rem;
+  }
+  @include desktop {
+    width: 5rem;
+    height: 5rem;
+    margin-right: 1.5rem;
+  }
+  .icon-social-media {
+    i {
+      font-size: 19px;
+      font-weight: bold;
+      @include telefono {
+        font-size: 22px;
+      }
+      @include tablet {
+        font-size: 25px;
+      }
+      @include desktop {
+        font-size: 28px;
+      }
+    }
+    .fab.fa-instagram {
+      font-size: 26px;
+      @include telefono {
+        font-size: 30px;
+      }
+      @include tablet {
+        font-size: 34px;
+      }
+      @include desktop {
+        font-size: 34px;
+      }
+    }
+  }
+}
+.footer-copyright {
+  margin: 1.5rem 0 0 0;
+  font-size: 2rem;
+  text-align: center;
+  color: $blanco;
+  font-family: $fuente-secundaria;
+  @include telefono {
+    font-size: 2.5rem;
+  }
+  @include tablet {
+    font-size: 2.5rem;
+  }
+  @include desktop {
+    font-size: 3rem;
+  }
+}

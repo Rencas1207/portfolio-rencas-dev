@@ -1,0 +1,143 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 7rem;
+  transition: 0.6s;
+  z-index: 999;
+  padding: 35px 0px 35px 0;
+}
+
+header.sticky {
+  padding: 5px 0px;
+  // background: #0c1633;
+  // background: #0d081a;
+  // background: rgb(241, 241, 241);
+  background: $main-color;
+  // background: $link-bar;
+  // background: #0c1633;
+  // background: #0d081a;
+  box-shadow: 0 0.3rem 0.4rem #444;
+}
+
+header.sticky a {
+  // color: $fuxia-color;
+  // color: $negro;
+  color: $fuxia-color;
+  // color: #0d081a;
+  // color: $main-color;
+  // color: $link-bar;
+  // color: $blanco;
+  // text-shadow: none;
+  // text-shadow: -3px -3px 3px $negro, 3px -3px 3px $negro, -3px 3px 3px $negro,
+  //   3px 3px 3px $negro;
+}
+
+.header-container {
+  // border: 2px solid white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+
+  // border: 2px solid red;
+  .logo {
+    z-index: 999;
+    img {
+      width: 16rem;
+      height: 6rem;
+      transition: 0.6s;
+    }
+  }
+}
+
+.navegacion-principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #0c1633;
+  background: $main-color;
+  // background: #0d081a;
+  // padding: 5rem 0;
+  overflow: hidden;
+  // border: 2px solid red;
+  transition: all 0.4s ease;
+  overflow: hidden;
+  position: fixed;
+  left: -100%;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+
+  @include desktop {
+    display: block;
+    width: auto;
+    height: auto;
+    position: static;
+    background: none;
+  }
+  &.is-active {
+    left: 0%;
+  }
+  a {
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 2.8rem;
+    // color: $link-bar;
+    color: $fuxia-color;
+    transition: all 0.6s;
+    // border: 2px solid black;
+    // line-height: 7rem;
+    text-shadow: -3px -3px 3px $blanco, 3px -3px 3px $blanco,
+      -3px 3px 3px $blanco, 3px 3px 3px $blanco;
+    // z-index: 1000;
+    padding: 2rem 0;
+    @include desktop {
+      font-size: 2.6rem;
+      text-transform: initial;
+    }
+    &:hover {
+      color: $link-bar;
+      // color: $fuxia-color;
+    }
+  }
+}
+
+.hamburger {
+  position: relative;
+  display: block;
+  width: 45px;
+  cursor: pointer;
+  background: none;
+  outline: none;
+  border: none;
+  z-index: 999;
+  @include desktop {
+    display: none;
+  }
+  &::after,
+  &::before,
+  .bar {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background: $fuxia-color;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  &.is-active {
+    &::before {
+      transform: rotate(-45deg) translate(-8px, 6px);
+    }
+    &::after {
+      transform: rotate(45deg) translate(-9px, -8px);
+    }
+    .bar {
+      opacity: 0;
+    }
+  }
+}

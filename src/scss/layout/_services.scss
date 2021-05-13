@@ -1,0 +1,164 @@
+.services {
+  display: grid;
+  place-items: center;
+  // background-color: rgb(233, 233, 233);
+  // background: $second-color;
+  // background: #0c1633;
+  // background: #014584;
+  // background: #028abe;
+  // background: #97cadd;
+  // background-color: rgb(233, 233, 233);
+
+  // background: #0c1633;
+  background: #0d081a;
+  // background: #314462;
+  // background: #0c1633;
+  padding: 2.5rem 0;
+}
+
+.services-title-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // border: 2px solid green;
+
+  @include desktop {
+    justify-content: space-between;
+  }
+  .services-title {
+    // border: 2px solid red;
+    // width: 28rem;
+    display: flex;
+    justify-content: center;
+    @include desktop {
+      // width: 35rem;
+      justify-content: start;
+    }
+    .title {
+      width: 20rem;
+      // border: 2px solid blue;
+      border-bottom: 1rem solid $link-bar;
+      @include telefono {
+        width: 25rem;
+      }
+      @include tablet {
+        width: 30rem;
+      }
+      @include desktop {
+        width: 30rem;
+      }
+      h2 {
+        color: $fuxia-color;
+        font-size: 4.5rem;
+        margin: 0;
+        text-align: center;
+        text-transform: uppercase;
+        @include telefono {
+          font-size: 5.5rem;
+        }
+        @include tablet {
+          font-size: 6.5rem;
+        }
+        @include desktop {
+          text-align: left;
+          font-size: 6.5rem;
+        }
+      }
+    }
+  }
+  .services-number {
+    // border: 2px solid red;
+    display: none;
+    span {
+      font-size: 7.5rem;
+      color: $lead-number-black;
+    }
+    @include desktop {
+      display: block;
+    }
+  }
+}
+
+.services-main {
+  .services-description {
+    // border: 2px solid purple;
+    padding: 2.5rem 0;
+    text-align: center;
+    font-size: 2.5rem;
+    color: $blanco;
+    @include telefono {
+      font-size: 3rem;
+    }
+    @include tablet {
+      font-size: 3.5rem;
+    }
+    @include desktop {
+      font-size: 3rem;
+    }
+  }
+}
+
+.services-content {
+  // border: 2px solid green;
+  margin: 0 0 2rem 0;
+  @include grid(1, 1.5rem);
+  @include telefono {
+    @include grid(2, 1.5rem);
+  }
+  @include tablet {
+    @include grid(2, 1.5rem);
+  }
+  @include desktop {
+    @include grid(3, 1.5rem);
+  }
+}
+
+.service-card {
+  // border: 2px solid purple;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // background: $text-color;
+  // background-color: rgb(240, 240, 240);
+  // background: #314462;
+  // background: $second-color;
+  // background: $blanco;
+  // background: $main-color;
+  // background: #0d081a;
+  background: #0c1633;
+  // background: #314462;
+  height: 100%;
+  padding: 1rem;
+  color: $lead-number;
+  border-bottom: 8px solid transparent;
+  transition: all 0.6s;
+  @include tablet {
+    padding: 2rem;
+  }
+  &:hover {
+    border-bottom: 8px solid $main-color;
+    svg {
+      fill: $main-color;
+    }
+  }
+  svg {
+    // fill: $fuxia-color;
+    fill: #0d081a;
+    fill: $link-bar;
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+}
+
+.service-title {
+  font-size: 2.5rem;
+  padding: 1.8rem 0;
+}
+
+.service-description {
+  font-size: 2.5rem;
+  text-align: center;
+  color: $negro;
+  color: $blanco;
+  // font-style: oblique;
+}

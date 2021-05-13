@@ -1,0 +1,134 @@
+.modal {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.75);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.8s;
+  width: 100%;
+}
+
+.modal-content {
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.2rem;
+  z-index: 999;
+  svg {
+    width: 4rem;
+    height: 4rem;
+    fill: $fuxia-color;
+  }
+}
+
+.modal[id|="project"]:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.portfolio-modal {
+  display: flex;
+  flex-direction: column;
+  background: $blanco;
+  padding: 1rem;
+  max-width: 270px;
+  border: 7px solid $main-color;
+  border-radius: 2rem;
+  // border: 2px solid red;
+  @include telefonoSmall {
+    max-width: 300px;
+    padding: 0.5rem;
+    // border: 7px solid $main-color;
+  }
+  @include tablet {
+    max-width: 400px;
+  }
+  @include desktop {
+    display: grid;
+    grid-template-columns: 58% 42%;
+    gap: 0 1rem;
+    max-width: 900px;
+  }
+  img {
+    width: 100%;
+    height: 220px;
+    border: 2px solid red;
+    // height: auto;
+    @include tablet {
+      height: 290px;
+    }
+  }
+  h3 {
+    font-size: 2rem;
+    color: $link-bar;
+    // padding: 1rem 0 1rem 0;
+    padding: 0 0 1rem 0;
+    // border: 2px solid purple;
+    @include desktop {
+      font-size: 2.2rem;
+
+      padding: 1rem 0 1rem 0;
+    }
+  }
+  p {
+    font-size: 2.2rem;
+    font-family: $fuente-secundaria;
+    color: $text-color;
+    text-align: justify;
+    @include desktop {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+.portfolio-info {
+  border: 2px solid red;
+  margin-right: 0;
+  @include desktop {
+    margin-right: 1rem;
+  }
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.3rem;
+  text-align: center;
+}
+
+.table td {
+  color: $negro;
+  font-family: $fuente-secundaria;
+  font-size: 1.8rem;
+  border: 2px solid $negro;
+  background: $second-color;
+  @include desktop {
+    font-size: 2.2rem;
+  }
+
+  a {
+    color: $negro;
+  }
+  &.encabezado {
+    // border: 2px solid $negro;
+    padding: 0.8rem 1rem;
+    font-size: 1.2rem;
+    color: $text-color;
+    font-family: $fuente-principal;
+    letter-spacing: 1px;
+    background: $main-color;
+    @include desktop {
+      font-size: 1.5rem;
+    }
+  }
+}

@@ -1,0 +1,343 @@
+.contact {
+  display: grid;
+  place-items: center;
+  // background-color: $second-color;
+  background: none;
+  @include desktop {
+    background: rgba(255, 255, 255, 1);
+    background: -moz-linear-gradient(
+      left,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 50%,
+      rgba(214, 220, 229, 1) 50%,
+      rgba(214, 220, 229, 1) 100%
+    );
+    background: -webkit-gradient(
+      left top,
+      right top,
+      color-stop(0%, rgba(255, 255, 255, 1)),
+      color-stop(0%, rgba(255, 255, 255, 1)),
+      color-stop(0%, rgba(255, 255, 255, 1)),
+      color-stop(50%, rgba(255, 255, 255, 1)),
+      color-stop(50%, rgba(214, 220, 229, 1)),
+      color-stop(100%, rgba(214, 220, 229, 1))
+    );
+    background: -webkit-linear-gradient(
+      left,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 50%,
+      rgba(214, 220, 229, 1) 50%,
+      rgba(214, 220, 229, 1) 100%
+    );
+    background: -o-linear-gradient(
+      left,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 50%,
+      rgba(214, 220, 229, 1) 50%,
+      rgba(214, 220, 229, 1) 100%
+    );
+    background: -ms-linear-gradient(
+      left,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 50%,
+      rgba(214, 220, 229, 1) 50%,
+      rgba(214, 220, 229, 1) 100%
+    );
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 50%,
+      rgba(214, 220, 229, 1) 50%,
+      rgba(214, 220, 229, 1) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#d6dce5', GradientType=1);
+  }
+
+  padding: 2.5rem 0;
+}
+
+.contact-title-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // border: 2px solid green;
+
+  @include desktop {
+    justify-content: space-between;
+  }
+  .contact-title {
+    // border: 2px solid red;
+    // width: 28rem;
+    display: flex;
+    justify-content: center;
+    @include desktop {
+      // width: 35rem;
+      justify-content: start;
+    }
+    .title {
+      width: 20rem;
+      // border: 2px solid blue;
+      border-bottom: 1rem solid $link-bar;
+      @include telefono {
+        width: 24rem;
+      }
+      @include tablet {
+        width: 27rem;
+      }
+      @include desktop {
+        width: 27rem;
+      }
+      h2 {
+        color: $fuxia-color;
+        font-size: 4.5rem;
+        margin: 0;
+        text-align: center;
+        text-transform: uppercase;
+        @include telefono {
+          font-size: 5.5rem;
+        }
+        @include tablet {
+          font-size: 6.5rem;
+        }
+        @include desktop {
+          text-align: left;
+          font-size: 6.5rem;
+        }
+      }
+    }
+  }
+  .contact-number {
+    // border: 2px solid red;
+    display: none;
+    span {
+      font-size: 7.5rem;
+      color: $lead-number-black;
+    }
+    @include desktop {
+      display: block;
+    }
+  }
+}
+
+.contact-description {
+  // border: 2px solid purple;
+  padding: 2.5rem 0;
+  text-align: center;
+  font-size: 2.5rem;
+  @include telefono {
+    font-size: 3rem;
+  }
+  @include tablet {
+    font-size: 3.5rem;
+  }
+  @include desktop {
+    font-size: 3rem;
+  }
+}
+
+.contenido-contact {
+  // border: 2px solid purple;
+  // display: flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // order: 1;
+  @include desktop {
+    @include grid(2, 2rem);
+    // flex-direction: row;
+  }
+  .contact-formulario {
+    // border: 2px solid purple;
+    order: 2;
+    @include desktop {
+      order: 1;
+    }
+  }
+}
+
+.contact-image {
+  // border: 2px solid purple;
+  order: 1;
+}
+
+.formulario {
+  /* border: 2px solid blue; */
+  padding: 2rem 0 0 0;
+
+  width: 100%;
+  height: 100%;
+  @include desktop {
+    padding: 2rem;
+  }
+  .input-data,
+  .input-data-textarea {
+    height: auto;
+    width: 100%;
+    position: relative;
+    margin-bottom: 2rem;
+  }
+}
+
+.input-data {
+  label {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    color: $text-color;
+    font-family: $fuente_secundaria;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    font-size: 2.5rem;
+  }
+  input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 3rem;
+    border-bottom: 4px solid $second-color;
+    outline: none;
+    font-family: $fuente-secundaria;
+    &:focus ~ label {
+      transform: translateY(-35px);
+      font-size: 1.8rem;
+      font-family: $fuente-secundaria;
+      color: $text-color;
+      font-weight: 600;
+    }
+    &:valid ~ label {
+      transform: translateY(-35px);
+      font-size: 1.8rem;
+      font-family: $fuente-secundaria;
+      color: $text-color;
+      font-weight: 600;
+    }
+    &:focus ~ .underline::before {
+      transform: scaleX(1);
+    }
+    &:valid ~ .underline::before {
+      transform: scaleX(1);
+    }
+  }
+  .underline {
+    position: absolute;
+    bottom: 0px;
+    height: 5px;
+    width: 100%;
+    &::before {
+      position: absolute;
+      content: "";
+      height: 100%;
+      width: 100%;
+      background: $main-color;
+      transform: scaleX(0);
+      transition: transform 0.5s ease;
+    }
+  }
+}
+
+.input-data-textarea {
+  label {
+    position: absolute;
+    bottom: 140px;
+    left: 0;
+    color: $text-color;
+    font-family: $fuente_secundaria;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    font-size: 2.5rem;
+  }
+  textarea {
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 3rem;
+    border-bottom: 4px solid $second-color;
+    outline: none;
+    font-family: $fuente-secundaria;
+    resize: none;
+    &:focus ~ label {
+      transform: translateY(-36px);
+      font-size: 1.8rem;
+      font-family: $fuente-secundaria;
+      color: $text-color;
+      font-weight: 600;
+    }
+    &:valid ~ label {
+      transform: translateY(-36px);
+      font-size: 1.8rem;
+      font-family: $fuente-secundaria;
+      color: $text-color;
+      font-weight: 600;
+    }
+    &:focus ~ .underline::before {
+      transform: scaleX(1);
+    }
+    &:valid ~ .underline::before {
+      transform: scaleX(1);
+    }
+  }
+  .underline {
+    position: absolute;
+    bottom: 0px;
+    height: 5px;
+    width: 100%;
+    &::before {
+      position: absolute;
+      content: "";
+      height: 100%;
+      width: 100%;
+      background: $main-color;
+      transform: scaleX(0);
+      transition: transform 0.5s ease;
+    }
+  }
+}
+
+input[type="submit"] {
+  border: 0;
+  border-radius: 3rem;
+  font-family: $fuente-principal;
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: $text-color;
+  margin: 0 auto;
+  cursor: pointer;
+  outline: 0;
+  font-size: 2.8rem;
+  padding: 1rem 2rem;
+  background-color: $main-color;
+}
+
+.contact-form-responsive {
+  padding: 1rem;
+  width: 300px;
+  text-align: center;
+  border-radius: 20px;
+  border: 5px solid $main-color;
+  background: $blanco;
+  // font-family: ;
+  font-size: 3.2rem;
+}
+
+.contact-form-responsive svg {
+  margin-top: 1rem;
+  width: 5.5rem;
+  height: 5.5rem;
+  fill: $fuxia-color;
+}
+
+.none {
+  display: none;
+}

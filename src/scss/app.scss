@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Ranchers&family=Rancho&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+@import "base/normalize";
+@import "base/variables";
+@import "base/utilidades";
+@import "base/mixins";
+@import "base/globales";
+
+@import "layout/header";
+@import "layout/hero-image";
+@import "layout/about";
+@import "layout/skills";
+@import "layout/services";
+@import "layout/projects";
+@import "layout/modal-projects";
+@import "layout/contact";
+@import "layout/footer";
