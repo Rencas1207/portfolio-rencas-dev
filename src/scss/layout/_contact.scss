@@ -320,6 +320,11 @@ input[type="submit"] {
   background-color: $main-color;
 }
 
+.modal#gracias:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 .contact-form-responsive {
   padding: 1rem;
   width: 300px;
@@ -327,8 +332,10 @@ input[type="submit"] {
   border-radius: 20px;
   border: 5px solid $main-color;
   background: $blanco;
-  // font-family: ;
   font-size: 3.2rem;
+  h3 {
+    color: $text-color;
+  }
 }
 
 .contact-form-responsive svg {

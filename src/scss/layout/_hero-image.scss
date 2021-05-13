@@ -1,12 +1,10 @@
 .webp .hero {
-  background: url(../../../build/img/hero-image-4.webp) center center no-repeat
-    fixed;
+  background: url(../img/hero-image-4.webp) center center no-repeat fixed;
   background-size: cover;
 }
 
 .no-webp .hero {
-  background: url(../../../build/img/hero-image-4.jpg) center center no-repeat
-    fixed;
+  background: url(../img/hero-image-4.jpg) center center no-repeat fixed;
   background-size: cover;
 }
 .hero {
