@@ -68,8 +68,8 @@ function versionWebp() {
 function watchFiles() {
    watch(paths.scss, css)
    watch(paths.js, javascript)
-   // watch(paths.imgs, imagenes);
-   // watch(paths.imgs, versionWebp);
+   watch(paths.imgs, imagenes);
+   watch(paths.imgs, versionWebp);
 }
 
-exports.default = series(css, javascript, watchFiles);
+exports.default = series(css, javascript, imagenes, versionWebp, watchFiles);
