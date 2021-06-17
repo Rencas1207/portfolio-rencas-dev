@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", e => {
+document.addEventListener('DOMContentLoaded', e => {
    maquinaDeEscribir();
    scrollTopButton(".scroll-top-btn");
    // showScroll();
@@ -195,7 +195,6 @@ function scrollTopButton(btn) {
 
    document.addEventListener('click', e => {
       if (e.target.matches(btn)) {
-
          window.scrollTo({
             behavior: "smooth",
             top: 0
